@@ -37,7 +37,7 @@ def ex1():
 
         correct = random.randint(0, 1)
         if not correct:
-            result += (random.randint(0, 1) * 2 - 1) * random.randint(1, 5)
+            result += (random.randint(1,10) - 10 + 1) * random.randint(1, 5)
 
         print(f'{left_operand} {operand_char} {right_operand} = {result}')
         print('1 for True, 0 for False: ', end="")
