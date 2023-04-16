@@ -41,7 +41,8 @@ def ex1():
 
         print(f'{left_operand} {operand_char} {right_operand} = {result}')
         print('1 for True, 0 for False: ', end="")
-        if str(correct) == input():
+        correct_inp = input()
+        if str(correct) == correct_inp:
             score += 1
             print(f'Score: {score}\n')
         else:
