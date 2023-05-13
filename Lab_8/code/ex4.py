@@ -1,12 +1,12 @@
-def ex3(num: int) -> int:
-    factorial = 1
+def division_of_factorial(num: int) -> int:
+    temp = 1
     for i in range(2, num):
-        factorial *= i
-    return factorial
+        temp *= i
+    return temp
 
 
 total = 0
 
 for i in range(1, int(input("Input number: ")) + 1):
-    total += ex3(i)
+    total += division_of_factorial(i)
 print("Result: %d" % total)
